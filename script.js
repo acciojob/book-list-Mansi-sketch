@@ -16,10 +16,13 @@
 						<td><button class="delete">X</button></td>`;
 	 document.getElementById('book-list').appendChild(element);
  }
+
+
+let mybtn = document.getElementById('submit');
+mybtn.addEventListener('click',submitData);
+
 	document.getElementsByClass('delete').addEventListener('click', function(e)=>{
 		if(e.target.classList.contains('delete')){
 			e.parentElement.parentElement.remove();
 		}
 	 })
-let mybtn = document.getElementById('submit');
-mybtn.addEventListener('click',submitData);
