@@ -21,8 +21,8 @@
 let mybtn = document.getElementById('submit');
 mybtn.addEventListener('click',submitData);
 
-	// document.getElementById('book-list').addEventListener('click', function (e) {
- //      if (e.target.classList.contains('delete-btn')) {
- //        e.target.parentElement.parentElement.remove(); // remove <tr>
- //      }
- //    });
+	document.getElementById('book-list').addEventListener('click', function (e) {
+      if (e.target.classList.contains('delete')) {
+        e.target.parentElement.parentElement.remove(); 
+      }
+    });
