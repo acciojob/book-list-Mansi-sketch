@@ -13,9 +13,13 @@
 	 element.innerHtml = `<td>${titleValue}</td>
 						<td>${authorValue}</td>
 						<td>${isbnValue}</td>
-						<td><button class="delete-btn">X</button></td>`;
+						<td><button class="delete">X</button></td>`;
 	 document.getElementById('book-list').appendChild(element);
-	 
  }
+	document.getElementsByClass('delete').addEventListener('click', function(e)=>{
+		if(e.target.classList.contains('delete')){
+			e.parentElement.parentElement.remove();
+		}
+	 })
 let mybtn = document.getElementById('submit');
 mybtn.addEventListener('click',submitData);
