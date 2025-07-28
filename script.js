@@ -21,7 +21,7 @@
 let mybtn = document.getElementById('submit');
 mybtn.addEventListener('click',submitData);
 
-	document.getElementsByClass('delete').addEventListener('click', function(e)=>{
+	document.getElementsByClass('book-list').addEventListener('click', function(e)=>{
 		if(e.target.classList.contains('delete')){
 			e.parentElement.parentElement.remove();
 		}
